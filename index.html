@@ -3,13 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="container">
-  <div class="content">
-    <h1>Ice Cream Shoppe</h1>
-  </div>
+    <div class="content">
+        <h1>Ice Cream Shoppe</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+            <div class="row">
+                <div>
+                    <label for="firstname">First</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+            </fieldset>
+    <div class="row">
+        <fieldset>
+            <legend>Flavor:</legend>
+            <div>
+                <input id="vanilla" name="icecream" type="radio">
+                <label for="vanilla">Vanilla</label>
+            </div>
+            <div>
+                <input id="strawberry" name="icecream" type="radio">
+                <label for="strawberry">Strawberry</label>
+            </div>
+            <div>
+                <input id="chocolate" name="icecream" type="radio">
+                <label for="chocolate">Chocolate</label>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <div>
+                    <input id="small" name="size" type="radio">
+                    <label for="small">Small</label>
+                </div>
+                <div>
+                    <input id="medium" name="size" type="radio">
+                    <label for="medium">Medium</label>
+                </div>
+                <div>
+                    <input id="large" name="size" type="radio">
+                    <label for="large">Large</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Toppings:</legend>
+                <div>
+                    <input id="sprinkles" name="sprinkles" type="checkbox" value="sprinkles">
+                    <label for="sprinkles">Sprinkles</label>
+                </div>
+                <div>
+                    <input id="whippedCream" name="whippedCream" type="checkbox" value="whippedCream">
+                    <label for="whippedCream">Whipped Cream</label>
+                </div>
+                <div>
+                    <input id="caramel" name="caramel" type="checkbox" value="caramel">
+                    <label for="caramel">Caramel</label>
+                </div>
+            </fieldset>
+        </div>
+            <fieldset>
+                <legend>Cup or Cone:</legend>
+                <label for="container">please Choose One</label>
+                <select name="container" id="container">
+                    <option value="cup">Plastic Cup</option>
+                    <option value="sugar">Sugar Cone</option>
+                    <option value="waffle">Waffle Cone</option>
+                    <option value="dippedWaffle">Chocolate Dipped Waffle COne</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <label for="SpecialRequest">Special Request:</label>
+                <textarea id="SpecialRequest" name="SpecialRequest" rows="4" cols="50"
+                      placeholder="allergic to peanuts, substitutions, etc."></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
 </div>
 </body>
 </html>
