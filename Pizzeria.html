@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Flies Pizza</h1>
+    <form>
+      <fieldset>
+        <legend>Customer:</legend>
+        <div class="row">
+          <div>
+            <label for="firstname">First</label>
+            <input id="firstname" name="first_name" type="text">
+          </div>
+          <div>
+            <label for="lastname">Last</label>
+            <input id="lastname" name="last_name" type="text">
+          </div>
+        </div>
+      </fieldset>
+      <div class="row">
+        <fieldset>
+          <legend>Toppings:</legend>
+          <div>
+            <input id="ExtraCheese" name="Topps" type="checkbox">
+            <label for="ExtraCheese">ExtraCheese</label>
+          </div>
+          <div>
+            <input id="Pepperoni" name="Topps" type="checkbox">
+            <label for="Pepperoni">Pepperoni</label>
+          </div>
+          <div>
+            <input id="Bacon" name="Topps" type="checkbox">
+            <label for="Bacon">Baconbits</label>
+          </div>
+          <div>
+            <input id="Pineapple" name="Topps" type="checkbox">
+            <label for="Pineapple">Pineapple</label>
+          </div>
+          <div>
+            <input id="Mushrooms" name="Topps" type="checkbox">
+            <label for="Mushrooms">Mushrooms</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Size:</legend>
+          <div>
+            <input id="small" name="size" type="radio">
+            <label for="small">Small</label>
+          </div>
+          <div>
+            <input id="medium" name="size" type="radio">
+            <label for="medium">Medium</label>
+          </div>
+          <div>
+            <input id="large" name="size" type="radio">
+            <label for="large">Large</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Crest:</legend>
+          <div>
+            <input id="Garlic" name="Garlic" type="radio" value="Garlic">
+            <label for="Garlic">Garlic</label>
+          </div>
+          <div>
+            <input id="Cheese" name="Cheese" type="radio" value="Cheese">
+            <label for="Cheese">Cheese</label>
+          </div>
+          <div>
+            <input id="Dough" name="Dough" type="radio" value="Dough">
+            <label for="Dough">Dough</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Extras:</legend>
+          <div>
+            <input id="Breadsticks" name="Extras" type="radio">
+            <label for="Breadsticks">Breadsticks</label>
+          </div>
+          <div>
+            <input id="HotWings" name="Extras" type="radio">
+            <label for="HotWings">HotWings</label>
+          </div>
+          <div>
+            <input id="MildWings" name="Extras" type="radio">
+            <label for="MildWings">MildWings</label>
+          </div>
+        </fieldset>
+        </div>
+        <fieldset>
+        <legend>Ordering:</legend>
+        <label for="container">Please Choose One</label>
+        <select name="container" id="container">
+          <option value="Delivery">Delivery</option>
+          <option value="Curbside">Curbside</option>
+          <option value="Pickup">Pickup</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Payment:</legend>
+        <label for="payment">Please Choose One</label>
+        <select name="payment" id="payment">
+          <option value="Debit">Debit Card</option>
+          <option value="Credit">Credit Card</option>
+          <option value="Pay">Pay at store</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Special:</legend>
+        <label for="SpecialRequest">Special Request:</label>
+        <textarea id="SpecialRequest" name="SpecialRequest" rows="4" cols="50"
+                  placeholder="Pizza cut, delievery place, etc. "></textarea>
+      </fieldset>
+      <button type="button" onclick="alert('$22.23')">Calculate Cost</button>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
